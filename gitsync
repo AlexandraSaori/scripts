@@ -1,0 +1,7 @@
+#! /bin/zsh
+
+git add * ;  \
+read "?Comment commit: " a;
+git commit -m $a ;
+git push origin master ;
+echo "all done"

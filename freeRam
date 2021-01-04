@@ -1,5 +1,5 @@
-#! bin/zsh
+#! /bin/zsh
 
 #free ram status
-xsetroot -name "$(free -h | grep Mem | awk {'printf("free:%.2f%"), $4/$2 * 100.0'})"
+free -h | grep Mem | awk {'printf("free: %.2f%"), $4/$2 * 100.0'}
 

@@ -1,4 +1,3 @@
-#! bin/zsh
-
+#! /bin/zsh
 #used ram status in percentage
-xsetroot -name "$(free -h | grep Mem | awk {'printf("used:%.2f%"), 100-($4/$2 * 100.0)'})"
+free -h | grep Mem | awk {'printf("used:%.2f%"), 100-($4/$2 * 100.0)'}

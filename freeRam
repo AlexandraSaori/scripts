@@ -1,5 +1,5 @@
 #! /bin/zsh
 
-#free ram status
+#free ram status in percentage
 free -h | grep Mem | awk {'printf("free: %.2f%"), $4/$2 * 100.0'}
 

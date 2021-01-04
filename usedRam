@@ -1,3 +1,4 @@
 #! /bin/zsh
+
 #used ram status in percentage
 free -h | grep Mem | awk {'printf("used:%.2f%"), 100-($4/$2 * 100.0)'}

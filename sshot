@@ -1,0 +1,7 @@
+#! /bin/zsh
+name=$(dmenu -p "nombre: " -i <&-); sel=$(echo "window\nregion\nscreen" | dmenu -i); \ 
+  case $sel in \
+    region) scrot -s $HOME/Imágenes/screenshots/$name ;;
+    window) scrot -u $HOME/Imágenes/screenshots/$name ;;
+    screen) scrot $HOME/Imágenes/screenshots/$name ;;
+  esac

@@ -1,6 +1,6 @@
 #! /bin/zsh
 
 while true; do
-  xsetroot -name "$(usedRam) | $(date +" %a %d %b , %R ")"
+  xsetroot -name " $(date +" %a %d %b , %R ")"
   sleep 1m
 done &
